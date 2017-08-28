@@ -25,3 +25,25 @@ nav span {
   display: inline-block;
   padding: 20px 10px;
 }
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+  border: 1px solid black;
+}
+div {
+  border: 1px solid black;
+}
+large {
+  width: 630px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+medium {
+  width: 300px;
+}
+small {
+  width: 240px;
+}
