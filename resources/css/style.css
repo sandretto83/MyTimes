@@ -1,20 +1,28 @@
 header {
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index:1;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: 1px solid black;
-  position: fixed;
-  width: 100%;
-  height: 80px;
+}
+body {
+  display: block;
+  margin: 0;
 }
 .logo {
   display: flex;
   flex-grow: 1;
-  color: MediumAquamarine;
   padding-left: 30px;
   align-items: center;
+}
+.logo span {
+  color: MediumAquamarine;
 }
 nav {
   display: flex;
@@ -30,20 +38,61 @@ nav span {
   width: 1232px;
   margin: 0 auto 78px auto;
   padding-top: 116px;
-  border: 1px solid black;
 }
-div {
-  border: 1px solid black;
-}
-large {
-  width: 630px;
+.column {
   display: flex;
   flex-direction: column;
   margin-right: 32px;
 }
-medium {
+div {
+  display: block;
+}
+.column.large {
+  width: 630px;
+}
+.column.medium {
   width: 300px;
 }
-small {
+.column.small {
   width: 240px;
+}
+.lead-story .image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+.image-content {
+  display: block;
+  flex-direction: row;
+  justify-content: normal;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  color: white;
+}
+.fall-cancelled.image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+}
+.pop-culture.image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+}
+.cat-ceo.image-content {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+}
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  display: block;
+}
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
 }
